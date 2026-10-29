@@ -7,6 +7,7 @@ mini-boot 的后台管理前端，基于 Vue 3、TypeScript、Vben 和 Ant Desig
 环境：Node.js `^22.18.0 || ^24.12.0`、pnpm `11.16.0`。
 
 ```powershell
+# --frozen-lockfile：严格按 pnpm-lock.yaml 安装，不更新锁文件；与 package.json 不一致时会报错退出。
 pnpm install --frozen-lockfile
 pnpm dev
 ```

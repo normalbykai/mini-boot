@@ -16,12 +16,12 @@
         <module>mini-module-system</module>
         <module>mini-module-infra</module>
 <!--        <module>mini-module-member</module>-->
-<!--        <module>mini-module-bpm</module>-->
+        <module>mini-module-bpm</module>
 <!--        <module>mini-module-report</module>-->
 <!--        <module>mini-module-mp</module>-->
 <!--        <module>mini-module-pay</module>-->
 <!--        <module>mini-module-mall</module>-->
-<!--        <module>mini-module-crm</module>-->
+        <module>mini-module-crm</module>
         <module>mini-module-erp</module>
 <!--        <module>mini-module-iot</module>-->
 <!--        <module>mini-module-mes</module>-->

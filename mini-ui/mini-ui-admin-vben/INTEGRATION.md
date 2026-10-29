@@ -14,6 +14,7 @@
 要求 Node.js `^22.18.0 || ^24.12.0`、pnpm `11.16.0`。在本目录执行：
 
 ```powershell
+# --frozen-lockfile：严格按 pnpm-lock.yaml 安装，不更新锁文件；与 package.json 不一致时会报错退出。
 pnpm install --frozen-lockfile
 pnpm dev:antd
 ```

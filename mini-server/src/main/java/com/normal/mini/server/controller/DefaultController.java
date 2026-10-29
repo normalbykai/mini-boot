@@ -20,12 +20,6 @@ import static com.normal.mini.framework.common.exception.enums.GlobalErrorCodeCo
 @Slf4j
 public class DefaultController {
 
-    @RequestMapping("/admin-api/bpm/**")
-    public CommonResult<Boolean> bpm404() {
-        return CommonResult.error(NOT_IMPLEMENTED.getCode(),
-                "[工作流模块 mini-module-bpm - 已禁用][参考 https://doc.iocoder.cn/bpm/ 开启]");
-    }
-
     @RequestMapping(value = { "/admin-api/pay/**"})
     public CommonResult<Boolean> pay404() {
         return CommonResult.error(NOT_IMPLEMENTED.getCode(),
@@ -56,12 +50,6 @@ public class DefaultController {
     public CommonResult<Boolean> wms404() {
         return CommonResult.error(NOT_IMPLEMENTED.getCode(),
                 "[WMS 仓库管理系统 mini-module-wms - 已禁用][参考 https://doc.iocoder.cn/wms/build/ 开启]");
-    }
-
-    @RequestMapping("/admin-api/crm/**")
-    public CommonResult<Boolean> crm404() {
-        return CommonResult.error(NOT_IMPLEMENTED.getCode(),
-                "[CRM 模块 mini-module-crm - 已禁用][参考 https://doc.iocoder.cn/crm/build/ 开启]");
     }
 
     @RequestMapping(value = { "/admin-api/mes/**"})

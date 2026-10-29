@@ -1,0 +1,1 @@
+package com.normal.mini.module.crm.dal.mysql.permission;

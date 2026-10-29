@@ -46,11 +46,11 @@
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
         <!-- 工作流 -->
-<!--        <dependency>-->
-<!--            <groupId>com.normal.boot</groupId>-->
-<!--            <artifactId>mini-module-bpm</artifactId>-->
-<!--            <version>${revision}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.normal.boot</groupId>
+            <artifactId>mini-module-bpm</artifactId>
+            <version>${revision}</version>
+        </dependency>
         <!-- 支付服务。默认注释，保证编译速度 -->
 <!--        <dependency>-->
 <!--            <groupId>com.normal.boot</groupId>-->
@@ -87,12 +87,12 @@
 <!--            <version>${revision}</version>-->
 <!--        </dependency>-->
 
-        <!-- CRM 相关模块。默认注释，保证编译速度 -->
-<!--        <dependency>-->
-<!--            <groupId>com.normal.boot</groupId>-->
-<!--            <artifactId>mini-module-crm</artifactId>-->
-<!--            <version>${revision}</version>-->
-<!--        </dependency>-->
+        <!-- CRM 客户关系管理模块 -->
+        <dependency>
+            <groupId>com.normal.boot</groupId>
+            <artifactId>mini-module-crm</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
         <!-- ERP 进销存模块 -->
         <dependency>
