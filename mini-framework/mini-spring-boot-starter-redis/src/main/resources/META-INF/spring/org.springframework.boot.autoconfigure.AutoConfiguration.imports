@@ -1,0 +1,2 @@
+com.normal.mini.framework.redis.config.MiniRedisAutoConfiguration
+com.normal.mini.framework.redis.config.MiniCacheAutoConfiguration

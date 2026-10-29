@@ -1,0 +1,4 @@
+com.normal.mini.framework.idempotent.config.MiniIdempotentConfiguration
+com.normal.mini.framework.lock4j.config.MiniLock4jConfiguration
+com.normal.mini.framework.ratelimiter.config.MiniRateLimiterConfiguration
+com.normal.mini.framework.signature.config.MiniApiSignatureAutoConfiguration

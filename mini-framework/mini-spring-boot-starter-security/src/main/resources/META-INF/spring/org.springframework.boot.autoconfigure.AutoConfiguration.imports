@@ -1,0 +1,3 @@
+com.normal.mini.framework.security.config.MiniSecurityAutoConfiguration
+com.normal.mini.framework.security.config.MiniWebSecurityConfigurerAdapter
+com.normal.mini.framework.operatelog.config.MiniOperateLogConfiguration

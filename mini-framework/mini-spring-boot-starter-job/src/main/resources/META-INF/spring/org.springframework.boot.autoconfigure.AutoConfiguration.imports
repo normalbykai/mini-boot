@@ -1,0 +1,2 @@
+com.normal.mini.framework.quartz.config.MiniQuartzAutoConfiguration
+com.normal.mini.framework.quartz.config.MiniAsyncAutoConfiguration

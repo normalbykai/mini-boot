@@ -1,0 +1,3 @@
+com.normal.mini.framework.mq.redis.config.MiniRedisMQProducerAutoConfiguration
+com.normal.mini.framework.mq.redis.config.MiniRedisMQConsumerAutoConfiguration
+com.normal.mini.framework.mq.rabbitmq.config.MiniRabbitMQAutoConfiguration

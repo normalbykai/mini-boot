@@ -1,0 +1,7 @@
+com.normal.mini.framework.apilog.config.MiniApiLogAutoConfiguration
+com.normal.mini.framework.jackson.config.MiniJacksonAutoConfiguration
+com.normal.mini.framework.swagger.config.MiniSwaggerAutoConfiguration
+com.normal.mini.framework.web.config.MiniWebAutoConfiguration
+com.normal.mini.framework.xss.config.MiniXssAutoConfiguration
+com.normal.mini.framework.banner.config.MiniBannerAutoConfiguration
+com.normal.mini.framework.encrypt.config.MiniApiEncryptAutoConfiguration
