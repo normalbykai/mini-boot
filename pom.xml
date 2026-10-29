@@ -22,7 +22,7 @@
 <!--        <module>mini-module-pay</module>-->
 <!--        <module>mini-module-mall</module>-->
 <!--        <module>mini-module-crm</module>-->
-<!--        <module>mini-module-erp</module>-->
+        <module>mini-module-erp</module>
 <!--        <module>mini-module-iot</module>-->
 <!--        <module>mini-module-mes</module>-->
 <!--        <module>mini-module-wms</module>-->

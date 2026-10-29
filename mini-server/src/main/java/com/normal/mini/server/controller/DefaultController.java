@@ -52,12 +52,6 @@ public class DefaultController {
                 "[商城系统 mini-module-mall - 已禁用][参考 https://doc.iocoder.cn/mall/build/ 开启]");
     }
 
-    @RequestMapping("/admin-api/erp/**")
-    public CommonResult<Boolean> erp404() {
-        return CommonResult.error(NOT_IMPLEMENTED.getCode(),
-                "[ERP 模块 mini-module-erp - 已禁用][参考 https://doc.iocoder.cn/erp/build/ 开启]");
-    }
-
     @RequestMapping(value = { "/admin-api/wms/**"})
     public CommonResult<Boolean> wms404() {
         return CommonResult.error(NOT_IMPLEMENTED.getCode(),
