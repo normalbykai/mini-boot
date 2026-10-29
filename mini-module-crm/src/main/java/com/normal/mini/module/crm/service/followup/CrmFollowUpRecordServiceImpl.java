@@ -66,6 +66,7 @@ public class CrmFollowUpRecordServiceImpl implements CrmFollowUpRecordService {
     public Long createFollowUpRecord(CrmFollowUpRecordSaveReqVO createReqVO) {
         // 1. 创建更进记录
         CrmFollowUpRecordDO record = BeanUtils.toBean(createReqVO, CrmFollowUpRecordDO.class);
+        normalizeListFields(record);
         crmFollowUpRecordMapper.insert(record);
 
         // 2. 更新 bizId 对应的记录
@@ -101,7 +102,17 @@ public class CrmFollowUpRecordServiceImpl implements CrmFollowUpRecordService {
         if (CollUtil.isEmpty(list)) {
             return;
         }
-        crmFollowUpRecordMapper.insertBatch(BeanUtils.toBean(list, CrmFollowUpRecordDO.class));
+        crmFollowUpRecordMapper.insertBatch(BeanUtils.toBean(list, CrmFollowUpRecordDO.class, this::normalizeListFields));
+    }
+
+    /**
+     * 将 List 字段的 null 归一化为空集合，避免数据库写入 NULL 后，查询时出现 NPE
+     */
+    private void normalizeListFields(CrmFollowUpRecordDO record) {
+        record.setPicUrls(CollUtil.emptyIfNull(record.getPicUrls()));
+        record.setFileUrls(CollUtil.emptyIfNull(record.getFileUrls()));
+        record.setBusinessIds(CollUtil.emptyIfNull(record.getBusinessIds()));
+        record.setContactIds(CollUtil.emptyIfNull(record.getContactIds()));
     }
 
     @Override

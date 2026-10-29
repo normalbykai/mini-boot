@@ -1,5 +1,6 @@
 package com.normal.mini.module.crm.controller.admin.followup;
 
+import cn.hutool.core.collection.CollUtil;
 import com.normal.mini.framework.common.pojo.CommonResult;
 import com.normal.mini.framework.common.pojo.PageResult;
 import com.normal.mini.framework.common.util.collection.MapUtils;
@@ -90,6 +91,11 @@ public class CrmFollowUpRecordController {
     @Operation(summary = "获得跟进记录分页")
     public CommonResult<PageResult<CrmFollowUpRecordRespVO>> getFollowUpRecordPage(@Valid CrmFollowUpRecordPageReqVO pageReqVO) {
         PageResult<CrmFollowUpRecordDO> pageResult = followUpRecordService.getFollowUpRecordPage(pageReqVO);
+        // 1.0 处理 contactIds、businessIds 为空的情况：例如线索、合同的跟进记录，不会有联系人和商机
+        pageResult.getList().forEach(record -> {
+            record.setContactIds(CollUtil.emptyIfNull(record.getContactIds()));
+            record.setBusinessIds(CollUtil.emptyIfNull(record.getBusinessIds()));
+        });
         // 1.1 查询联系人和商机
         Map<Long, CrmContactDO> contactMap = contactService.getContactMap(
                 convertSetByFlatMap(pageResult.getList(), item -> item.getContactIds().stream()));
